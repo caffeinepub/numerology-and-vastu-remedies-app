@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component managing tab navigation between home, numerology form, reports, Vastu remedies, and consultation booking with state management for generated reports and navigation handlers to enable seamless flow between sections.",
+  "frontend/src/components/Header.tsx": "Navigation header component with logo, brand name, and dynamic tab navigation that shows/hides Report and Vastu tabs based on data availability, with responsive mobile dropdown menu.",
+  "frontend/src/components/Footer.tsx": "Footer component displaying copyright notice and attribution link to caffeine.ai with a heart icon.",
+  "frontend/src/components/Hero.tsx": "Home page hero section featuring banner image, introduction to Ankit's expertise, numerology and Vastu science overview, and feature cards highlighting key services.",
+  "frontend/src/components/NumerologyForm.tsx": "Form component for collecting user name and birth date with validation, date picker, and integration with backend to generate numerology reports and Vastu remedies.",
+  "frontend/src/components/NumerologyReport.tsx": "Displays comprehensive numerology report including life path number, birth chart analysis, lucky numbers, favorable colors, career recommendations, and relationship guidance with navigation buttons to Vastu remedies and consultation booking.",
+  "frontend/src/components/VastuRemedies.tsx": "Presents personalized Vastu remedies with compass visualization, preferred directions, suggestions list, and implementation instructions with navigation buttons back to report and to consultation booking.",
+  "frontend/src/components/ConsultationBooking.tsx": "Consultation booking interface with form for name and phone, time slot selection from available slots, booking confirmation, and session details display.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including generating numerology reports, Vastu remedies, booking consultations, and fetching available time slots and bookings.",
+  "frontend/src/index.css": "Global styles with OKLCH color system implementing spiritual theme with gold, blue, and maroon colors for both light and dark modes."
+}

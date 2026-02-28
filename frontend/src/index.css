@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Gold, Blue, Maroon spiritual theme */
+        --background: 0.98 0.01 60;
+        --foreground: 0.2 0.02 30;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.2 0.02 30;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0.02 30;
+        
+        /* Primary: Rich Gold */
+        --primary: 0.65 0.15 70;
+        --primary-foreground: 0.98 0.01 60;
+        
+        /* Secondary: Deep Maroon */
+        --secondary: 0.35 0.12 15;
+        --secondary-foreground: 0.98 0.01 60;
+        
+        /* Accent: Royal Blue */
+        --accent: 0.55 0.18 250;
+        --accent-foreground: 0.98 0.01 60;
+        
+        --muted: 0.95 0.01 60;
+        --muted-foreground: 0.5 0.02 30;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.01 60;
+        
+        --border: 0.9 0.01 60;
+        --input: 0.9 0.01 60;
+        --ring: 0.65 0.15 70;
+        
+        --chart-1: 0.65 0.15 70;
+        --chart-2: 0.55 0.18 250;
+        --chart-3: 0.35 0.12 15;
+        --chart-4: 0.7 0.12 40;
+        --chart-5: 0.6 0.15 280;
+        
+        --sidebar: 0.98 0.01 60;
+        --sidebar-foreground: 0.2 0.02 30;
+        --sidebar-primary: 0.65 0.15 70;
+        --sidebar-primary-foreground: 0.98 0.01 60;
+        --sidebar-accent: 0.95 0.01 60;
+        --sidebar-accent-foreground: 0.2 0.02 30;
+        --sidebar-border: 0.9 0.01 60;
+        --sidebar-ring: 0.65 0.15 70;
+    }
+
+    .dark {
+        --background: 0.15 0.02 30;
+        --foreground: 0.95 0.01 60;
+        
+        --card: 0.2 0.02 30;
+        --card-foreground: 0.95 0.01 60;
+        
+        --popover: 0.18 0.02 30;
+        --popover-foreground: 0.95 0.01 60;
+        
+        /* Primary: Bright Gold */
+        --primary: 0.75 0.18 65;
+        --primary-foreground: 0.15 0.02 30;
+        
+        /* Secondary: Lighter Maroon */
+        --secondary: 0.45 0.15 15;
+        --secondary-foreground: 0.95 0.01 60;
+        
+        /* Accent: Bright Blue */
+        --accent: 0.65 0.2 250;
+        --accent-foreground: 0.95 0.01 60;
+        
+        --muted: 0.25 0.02 30;
+        --muted-foreground: 0.65 0.01 60;
+        
+        --destructive: 0.6 0.25 25;
+        --destructive-foreground: 0.95 0.01 60;
+        
+        --border: 0.3 0.02 30;
+        --input: 0.3 0.02 30;
+        --ring: 0.75 0.18 65;
+        
+        --chart-1: 0.75 0.18 65;
+        --chart-2: 0.65 0.2 250;
+        --chart-3: 0.45 0.15 15;
+        --chart-4: 0.8 0.15 40;
+        --chart-5: 0.7 0.18 280;
+        
+        --sidebar: 0.2 0.02 30;
+        --sidebar-foreground: 0.95 0.01 60;
+        --sidebar-primary: 0.75 0.18 65;
+        --sidebar-primary-foreground: 0.15 0.02 30;
+        --sidebar-accent: 0.25 0.02 30;
+        --sidebar-accent-foreground: 0.95 0.01 60;
+        --sidebar-border: 0.3 0.02 30;
+        --sidebar-ring: 0.75 0.18 65;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
